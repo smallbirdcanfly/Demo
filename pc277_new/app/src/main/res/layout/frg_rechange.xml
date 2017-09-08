@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="285dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@drawable/btn_green_wart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="#f7f8c8"
+                android:text="线下银行转账有惊喜"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="220dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/text_white" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/text_white"
+                android:paddingRight="20dp"
+                android:text="1.凡使用线下充值-银联转账的用户，平台予以奖励；（最低充值50元）充值请不要整数如（499.01)\n2.当日首次充值，平台多赠送3%;\n3.当日第二次充值开始，每次多赠送1.2%；" />
+        </LinearLayout>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rechange_next"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="330dp"
+            android:background="@drawable/rechange_bank"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="2dp"
+        android:padding="3dp"
+        android:background="@drawable/ease_section_bg"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎"
+            android:textSize="11sp"
+            android:textColor="#666"/>
+        
+        <ImageView
+            android:id="@+id/ivLevelThumb"
+            android:layout_width="48dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="2dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvJoinedMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户"
+            android:textSize="11sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进入房间..."
+            android:textSize="11sp"
+            android:textColor="#666"/>
+    </LinearLayout>
+</LinearLayout>

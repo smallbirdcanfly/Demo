@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_height"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textSize="@dimen/topbar_title"
+        android:textColor="#fff"
+        android:text="动态" />
+
+    <!--<shenhuanhua.cdh.pcdd.ui.widget.DragTopLayout
+        android:id="@+id/dragLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/bannerDynamic"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:canLoop="true" />
+
+        <com.fz.cdh.pcdd.ui.widget.MyTabView
+            android:id="@+id/tabDynamic"
+            android:layout_margin="12dp"
+            android:background="@color/text_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1px"/>
+    <!--</shenhuanhua.cdh.pcdd.ui.widget.DragTopLayout>-->
+</LinearLayout>

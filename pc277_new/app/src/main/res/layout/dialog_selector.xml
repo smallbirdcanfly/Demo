@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_top"
+    android:background="@drawable/arc_light_black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/arc_light_black"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="取消"
+                android:textColor="@color/colorPrimary" />
+
+
+            <TextView
+                android:id="@+id/tv_title"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="请选择时间" />
+
+
+            <TextView
+                android:id="@+id/tv_select"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="选择"
+                android:textColor="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/divider_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <com.fz.cdh.pcdd.weight.timeselector.view.PickerView
+                    android:id="@+id/year_pv"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="年"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <com.fz.cdh.pcdd.weight.timeselector.view.PickerView
+                    android:id="@+id/month_pv"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="月"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <com.fz.cdh.pcdd.weight.timeselector.view.PickerView
+                    android:id="@+id/day_pv"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="日"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+
+                <com.fz.cdh.pcdd.weight.timeselector.view.PickerView
+                    android:id="@+id/hour_pv"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:id="@+id/hour_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <com.fz.cdh.pcdd.weight.timeselector.view.PickerView
+                    android:id="@+id/minute_pv"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:id="@+id/minute_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <com.fz.cdh.pcdd.weight.timeselector.view.PickerView
+                    android:id="@+id/second_pv"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:id="@+id/second_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

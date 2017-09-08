@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tvNum1"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"/>
+   <!-- android:background="@drawable/circle_orange"-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:text="+"/>
+
+    <TextView
+        android:id="@+id/tvNum2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:gravity="center"
+
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:text="+"/>
+
+    <TextView
+        android:id="@+id/tvNum3"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:gravity="center"
+
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:text="="/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:gravity="center"
+
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"/>
+</LinearLayout>

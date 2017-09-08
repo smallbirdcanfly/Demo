@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:background="#fff">
+
+    <View
+        android:id="@+id/ivMsgUnread"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@drawable/shape_circle" />
+
+    <TextView
+        android:id="@+id/tvMsgTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/text_black"
+        android:text="维护通知" />
+
+    <TextView
+        android:id="@+id/tvMsgDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="11sp"
+        android:textColor="@color/text_gray"
+        android:text="2017-01-01" />
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpBetPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOddsExplain"
+                style="@style/btn_translucent"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:text="赔率说明"/>
+            <Button
+                android:id="@+id/btnCancleOrder"
+                style="@style/btn_translucent"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:visibility="gone"
+                android:text="撤单"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnMinPoint"
+                style="@style/btn_redlucent"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:text="最小投注"/>
+
+            <Button
+                android:id="@+id/btnDoublePoint"
+                style="@style/btn_redlucent"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="双倍投注"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#fff"
+                android:text="投注金额"/>
+            
+            <EditText
+                android:id="@+id/edBetPoint"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:inputType="number"
+                android:maxLength="8"
+                android:background="@drawable/rect_white"/>
+            
+            <Button
+                android:id="@+id/btnBetting"
+                style="@style/btn_orange2"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="投注"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

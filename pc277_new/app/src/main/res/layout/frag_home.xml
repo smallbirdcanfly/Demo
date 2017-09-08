@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="100dp"
+    android:layout_height="86dp"
+    android:paddingTop="5dp"
+    android:layout_gravity="right"
+    android:background="@drawable/dlg_bg">
+
+    <TextView
+        android:id="@+id/tvBetLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/wode_43"
+        android:drawablePadding="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/text_blue"
+        android:text="充值"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tvHowToPlay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/wode_51"
+        android:drawablePadding="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/text_blue"
+        android:text="提现"/>
+</LinearLayout>

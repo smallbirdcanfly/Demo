@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tab_label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="会员"
+            android:textColor="@color/text_white" />
+
+        <TextView
+            style="@style/tab_label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:text="累计投注次数"
+            android:visibility="gone"
+            android:textColor="@color/text_white" />
+
+        <TextView
+            style="@style/tab_label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:text="条件"
+            android:textColor="@color/text_white" />
+
+        <TextView
+            style="@style/tab_label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:text="佣金"
+            android:textColor="@color/text_white" />
+    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tab_label"
+            android:layout_width="0dp"
+            android:textColor="@color/text_white"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="日期" />
+
+        <TextView
+            style="@style/tab_label"
+            android:layout_width="0dp"
+            android:textColor="@color/text_white"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:text="累计投注次数" />
+
+        <TextView
+            style="@style/tab_label"
+            android:layout_width="0dp"
+            android:textColor="@color/text_white"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:text="累计投注金额" />
+
+        <TextView
+            style="@style/tab_label"
+            android:layout_width="0dp"
+            android:textColor="@color/text_white"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:text="佣金" />
+    </LinearLayout>
+    <com.fz.cdh.pcdd.ui.widget.refresh.PullLoadMoreRecyclerView
+        android:id="@+id/rvData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+</LinearLayout>

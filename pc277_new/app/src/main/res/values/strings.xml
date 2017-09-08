@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="host_release_47">http://47.94.216.214:8080/</string>
+    <string name="host_debug_104">http://192.168.1.250:8080/</string>
+
+
+    <string name="app_name">我爱28</string>
+    <string name="net_err_404">服务器升级维护中...</string>
+    <string name="load_more_text">Load More...</string>
+    <string name="rule_backwater"><u>回水规则是什么？</u></string>
+    <string name="label_recharge_channel">%1$s支付(扫一扫直接到账)</string>
+    <string name="label_recharge_scan_qr">%1$s支付扫码信息</string>
+    <string name="label_order_no">订单号：%1$s</string>
+    <string name="label_recharge_fee">充值金额：%1$.2f元</string>
+    <string name="recharge_step_tips">扫码步骤：\n1.点“立即充值”将自动为您截屏并保存到相册，同时打开%1$s。\n2.请在%2$s中打开“扫一扫”。
+            \n3.在扫一扫中点击右上角，选择“从相册选取二维码”选取截屏的图片。\n4.如充值未及时到账，请联系在线客服。</string>
+    <string name="bet_result_dxds">中奖和值：[%1$s]</string>
+    <string name="bet_result_number">中奖号码：[%1$s]</string>
+    <string name="current_game_num"><Data><![CDATA[距离<font color="#12DBAA"><b>%1$s</b></font>期截止]]></Data></string>
+    <string name="pre_game_num"><Data><![CDATA[第<font color="#12DBAA"><b>%1$s</b></font>期]]></Data></string>
+    <string name="account_balance">账户余额：%1$s元</string>
+    <string name="withdraw_notice">最低提现金额%1$s元宝\n提现10分钟内到账，如高峰期30分钟内到账\n提现处理成功请查看您的银行号\n未到账请联系平台客服</string>
+    <string name="withdraw_remind">您的余额为%1$s元宝\n每日有%2$d次免费提现机会，当前剩余%3$d次\n超过则每次收取%4$s的手续费</string>
+    <string name="bet_pause_tip"><Data><![CDATA[<font color="#12DBAA"><b>[%1$s]</b></font> 已封盘，下注结果以\n系统开奖为标准，如有异议，请及时联\n系客服。]]></Data></string>
+    <string name="transfer_bank_tips">*请勿存入整数金额（样例1000.32元，500.88元），以免延误财务查收。\n
+        *转账完成后请保留单据作为核对证明。\n
+        *请确实填写转账金额与时间\n
+        *每笔转账请提交一次。</string>
+    <string name="cus_svr_greet">尊敬的会员您好，感谢您光临pc蛋蛋平台，为提供更便捷服务请使用以下自助功能快捷回复！\n</string>
+    <string name="label_share_id">您的分享ID为:</string>
+    <string name="rule_vip_share">1.条件:VIP分享所发展的用户每天投注满 %1$d 次;\n2.佣金:按下线用户有效投注额为准(元宝)。</string>
+</resources>

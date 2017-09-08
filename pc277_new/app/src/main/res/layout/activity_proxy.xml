@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <RadioGroup
+        android:id="@+id/rgProxy"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/rbProxy1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:background="@drawable/radio_proxy_bg"
+            android:textColor="@color/radio_proxy_text"
+            android:textSize="15sp"
+            android:text="直接开户"/>
+
+        <RadioButton
+            android:id="@+id/rbProxy2"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/radio_proxy_bg"
+            android:textColor="@color/radio_proxy_text"
+            android:textSize="15sp"
+            android:text="分享链接"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/divider" />
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>

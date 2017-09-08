@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@drawable/border_blue">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tvAliAccount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="13sp"
+                            android:textColor="@color/text_white"
+                            android:text="收款账号："/>
+
+                        <Button
+                            android:id="@+id/btnCopyName"
+                            style="@style/btn_blue_border"
+                            android:layout_width="35dp"
+                            android:layout_height="18dp"
+                            android:text="复制"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tvRealName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="13sp"
+                            android:textColor="@color/text_white"
+                            android:text="收款户名："/>
+
+                        <Button
+                            android:id="@+id/btnCopyAccount"
+                            style="@style/btn_blue_border"
+                            android:layout_width="35dp"
+                            android:layout_height="18dp"
+                            android:text="复制"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+
+                    style="@style/btn_redlucent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="75dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:text="收款人信息"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/text_black"
+                android:text="转账步骤"/>
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/bannerAliTransfer"
+                android:layout_width="285dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                app:canLoop="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="16dp"
+                    android:background="@color/text_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_black"
+                    android:text="请填写您的转账信息"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/text_blue"
+                android:text="支付宝户名"/>
+
+            <EditText
+                android:id="@+id/edRealName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:lines="1"
+                android:maxLength="15"
+                android:background="@drawable/border_gray"
+                android:textSize="13sp"
+                android:hint="请填写您转账时使用的支付宝户名"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/text_blue"
+                android:text="支付宝账号"/>
+
+            <EditText
+                android:id="@+id/edAliAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:lines="1"
+                android:maxLength="15"
+                android:background="@drawable/border_gray"
+                android:textSize="13sp"
+                android:hint="请填写您转账使用的支付宝账号"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/text_blue"
+                android:text="存款金额"/>
+
+            <EditText
+                android:id="@+id/edTransferFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:maxLength="15"
+                android:background="@drawable/border_gray"
+                android:textSize="13sp"
+                android:hint="请填写您此次转账的金额"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="13sp"
+                android:textColor="@color/text_black"
+                android:text="@string/transfer_bank_tips"/>
+
+            <Button
+                android:id="@+id/btnOK"
+                style="@style/btn_blue"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="提交"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

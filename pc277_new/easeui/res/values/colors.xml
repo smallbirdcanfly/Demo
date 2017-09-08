@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#393a3f</color>
+    <color name="colorPrimaryDark">#393a3f</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bg_activity">#ebebeb</color>
+
+    <color name="tab_text_nor">#999999</color>
+    <color name="tab_text_sel">#3a84ff</color>
+
+    <color name="text_black">#333333</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_blue">#3a84ff</color>
+    <color name="text_yellow">#fbfd00</color>
+    <color name="text_brown">#6b492c</color>
+    <color name="text_red">#ff0000</color>
+
+    <color name="divider">#d8d8d8</color>
+
+    <color name="circle_orange">#F78D4A</color>
+    <color name="circle_blue">#0921DC</color>
+    <color name="circle_green">#367F25</color>
+    <color name="circle_red">#F02828</color>
+    <color name="circle_gray">#C8C8C8</color>-->
+
+
+    <color name="colorPrimary">#12DBAA</color>
+    <color name="colorPrimaryDark">#393a3f</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bg_activity">#ebebeb</color>
+
+    <color name="tab_text_nor">#999999</color>
+    <color name="tab_text_sel">#3a84ff</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_black">#333333</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_blue">#12DBAA</color>
+    <color name="text_yellow">#fbfd00</color>
+    <color name="text_brown">#6b492c</color>
+    <color name="text_red">#ff0000</color>
+
+    <color name="divider">#d8d8d8</color>
+
+    <color name="circle_orange">#F78D4A</color>
+    <color name="circle_blue">#0921DC</color>
+    <color name="circle_green">#367F25</color>
+    <color name="circle_red">#F02828</color>
+    <color name="circle_gray">#C8C8C8</color>
+    <color name="light_green">#36fFf5</color>
+</resources>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_blue"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvBankName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="银行："
+                        android:textColor="@color/text_white"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvRealName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="收款人："
+                            android:textColor="@color/text_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnCopyName"
+                            style="@style/btn_blue_border"
+                            android:layout_width="35dp"
+                            android:layout_height="18dp"
+                            android:text="复制" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvBankAccount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="账号："
+                            android:textColor="@color/text_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnCopyAccount"
+                            style="@style/btn_blue_border"
+                            android:layout_width="35dp"
+                            android:layout_height="18dp"
+                            android:text="复制" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvBranchBank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="开户行："
+                            android:textColor="@color/text_white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnCopyBranch"
+                            style="@style/btn_blue_border"
+                            android:layout_width="35dp"
+                            android:layout_height="18dp"
+                            android:text="复制" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/btn_redlucent"
+                    android:layout_width="75dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="收款人信息"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="16dp"
+                    android:background="@color/text_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="请填写您的汇款信息"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="银行名称"
+                android:textColor="@color/text_blue"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edBankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_gray"
+                android:hint="请填写您汇款时使用银行卡所属银行"
+                android:lines="1"
+                android:maxLength="15"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="存款人姓名"
+                android:textColor="@color/text_blue"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edRealName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_gray"
+                android:hint="请填写您汇款时使用银行卡的户名"
+                android:lines="1"
+                android:maxLength="15"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="存款人账号"
+                android:textColor="@color/text_blue"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edBankAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_gray"
+                android:hint="请填写您汇款时使用银行卡卡号后4位"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="4"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="存款金额"
+                android:textColor="@color/text_blue"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edTransferFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_gray"
+                android:hint="请填写您此次汇款的金额"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:maxLength="15"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="存款方式"
+                android:textColor="@color/text_blue"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/edTransferWay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_gray"
+                android:hint="网银转账"
+                 android:inputType="text"
+                android:lines="1"
+                android:maxLength="15"
+                android:padding="8dp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/transfer_bank_tips"
+                android:textColor="@color/text_black"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnOK"
+                style="@style/btn_blue"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:text="提交" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

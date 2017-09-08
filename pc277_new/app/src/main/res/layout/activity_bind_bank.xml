@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/text_black"
+            android:text="开户姓名：" />
+
+        <EditText
+            android:id="@+id/edRealName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="请填写真实姓名"
+            android:padding="8dp"
+            android:lines="1"
+            android:maxLength="15"
+            android:textSize="14sp"
+            android:textColor="@color/text_black"
+            android:background="@drawable/edit_panel"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/text_black"
+            android:text="银行名称：" />
+
+        <TextView
+            android:id="@+id/edBankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="请填写银行名称"
+            android:padding="8dp"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:textSize="14sp"
+            android:textColor="@color/text_black"
+            android:background="@drawable/edit_panel"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/text_black"
+            android:text="银行卡号：" />
+
+        <EditText
+            android:id="@+id/edBankNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="请填写银行卡号"
+            android:padding="8dp"
+            android:inputType="number"
+            android:maxLines="2"
+            android:maxLength="30"
+            android:textSize="14sp"
+            android:textColor="@color/text_black"
+            android:background="@drawable/edit_panel"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/text_black"
+            android:text="开户地址：" />
+
+        <EditText
+            android:id="@+id/edBankAddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="请填写银行卡开户地址"
+            android:padding="8dp"
+            android:maxLines="2"
+            android:maxLength="50"
+            android:textSize="14sp"
+            android:textColor="@color/text_black"
+            android:background="@drawable/edit_panel"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/text_black"
+            android:text="提现密码：" />
+
+        <EditText
+            android:id="@+id/edWithdrawPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="请填写提现密码"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:maxLines="1"
+            android:maxLength="12"
+            android:textSize="14sp"
+            android:textColor="@color/text_black"
+            android:background="@drawable/edit_panel"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOK"
+        style="@style/btn_blue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="确定" />
+</LinearLayout>

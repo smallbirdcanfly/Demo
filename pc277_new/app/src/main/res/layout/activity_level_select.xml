@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_activity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rlGameLevel1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_level_1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/house_green"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvRoomLevelName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_white"
+                        android:textStyle="italic"  />
+
+                    <TextView
+                        android:id="@+id/tvRoomLevelDesc1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/tvRoomPeopleCount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:drawableLeft="@drawable/shouye_91"
+                        android:drawablePadding="2dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/text_white"
+                        android:textStyle="bold"
+                        android:text="--人" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivOddsExplain1"
+                    android:layout_width="70dp"
+                    android:layout_height="23dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/shouye_190" />
+                <include layout="@layout/layout_alpha" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlGameLevel2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_level_2">
+
+                <LinearLayout
+                    android:background="@drawable/house_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvRoomLevelName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_white"
+                        android:textStyle="italic"  />
+
+                    <TextView
+                        android:id="@+id/tvRoomLevelDesc2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:textStyle="italic"  />
+
+                    <TextView
+                        android:id="@+id/tvRoomPeopleCount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:drawableLeft="@drawable/shouye_91"
+                        android:drawablePadding="2dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/text_white"
+                        android:textStyle="bold"
+                        android:text="--人" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivOddsExplain2"
+                    android:layout_width="70dp"
+                    android:layout_height="23dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/shouye_190" />
+                <include layout="@layout/layout_alpha" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlGameLevel3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_level_3">
+
+                <LinearLayout
+                    android:background="@drawable/house_zi"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvRoomLevelName3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_white"
+                        android:textStyle="italic"  />
+
+                    <TextView
+                        android:id="@+id/tvRoomLevelDesc3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/tvRoomPeopleCount3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:drawableLeft="@drawable/shouye_91"
+                        android:drawablePadding="2dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/text_white"
+                        android:textStyle="bold"
+                        android:text="--人" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivOddsExplain3"
+                    android:layout_width="70dp"
+                    android:layout_height="23dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/shouye_190" />
+                <include layout="@layout/layout_alpha" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

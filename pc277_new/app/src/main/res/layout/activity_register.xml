@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/rect_white_translucent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:text="注册" />
+
+            <EditText
+                android:id="@+id/edAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="账号为6~12位字母或数字"
+                android:maxLength="12"
+                android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                android:drawableLeft="@drawable/denglu_07"
+                android:drawablePadding="5dp"
+                android:textSize="13sp"
+                android:padding="8dp"
+                android:background="@drawable/arc_white"/>
+
+            <EditText
+                android:id="@+id/edPassword1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="密码为6~12位字母或数字"
+                android:drawableLeft="@drawable/denglu_09"
+                android:drawablePadding="5dp"
+                android:maxLength="12"
+                android:inputType="textPassword"
+                android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                android:textSize="13sp"
+                android:padding="8dp"
+                android:background="@drawable/arc_white"/>
+
+            <EditText
+                android:id="@+id/edPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="确认密码"
+                android:drawableLeft="@drawable/denglu_09"
+                android:drawablePadding="5dp"
+                android:inputType="textPassword"
+                android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                android:textSize="13sp"
+                android:padding="8dp"
+                android:background="@drawable/arc_white"/>
+
+            <EditText
+                android:id="@+id/edRecommCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="请输入介绍人ID（没有可不填）"
+                android:maxLength="12"
+                android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                android:drawableLeft="@drawable/denglu_13"
+                android:drawablePadding="5dp"
+                android:textSize="13sp"
+                android:padding="8dp"
+                android:background="@drawable/arc_white"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/btn_blue"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/arc_blue"
+                android:text="注册" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/cbRegistAgreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/cb_check_regist"
+                    android:checked="true"
+                    android:paddingLeft="5dp"
+                    android:textSize="13sp"
+                    android:textColor="#fff"
+                    android:text="同意"/>
+
+                <TextView
+                    android:id="@+id/tvUserAgreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/cbRegistAgreement"
+                    android:textSize="13sp"
+                    android:textColor="#fff"
+                    android:text="《注册协议》"/>
+
+                <TextView
+                    android:id="@+id/tvCusSvr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="13sp"
+                    android:textColor="#fff"
+                    android:text="联系客服"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_close_red"/>
+    </RelativeLayout>
+</RelativeLayout>

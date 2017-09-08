@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/arc_white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:height="48dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/black_deep"
+            android:text="提示" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#eeeeee"
+            android:layout_height="1px"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black_deep"
+            android:layout_marginTop="10dp"
+            android:text="为了您的资金安全,请绑定手机号" />
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_white"
+                android:textSize="18sp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/arc_blue"
+                android:gravity="center"
+              android:layout_gravity="center"
+                android:text="确定" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

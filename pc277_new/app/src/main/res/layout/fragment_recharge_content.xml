@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="线上支付"
+        android:textSize="13sp"
+        android:textColor="@color/text_black"/>
+
+    <RadioGroup
+        android:id="@+id/rgPayType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/rbMoPay"
+            style="@style/check_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/mobao"
+            android:text="MO宝支付" />
+
+        <RadioButton
+            android:id="@+id/rbIyiAli"
+            style="@style/check_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="12sp"
+            android:layout_marginTop="1px"
+            android:drawableLeft="@drawable/cz_03"
+            android:text="支付宝支付 (客服微信：PC277KF)" />
+
+        <RadioButton
+            android:id="@+id/rbIyiWx"
+            style="@style/check_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="12sp"
+            android:layout_marginTop="1px"
+            android:drawableLeft="@drawable/cz_05"
+            android:text="微信支付 (需要另一台手机扫瞄)" />
+
+        <RadioButton
+
+            android:id="@+id/rbAliPay_scan"
+            style="@style/check_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/cz_03"
+            android:text="支付宝扫码" />
+
+        <RadioButton
+
+            android:id="@+id/rb_qq_scan"
+            style="@style/check_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/icon_qq"
+            android:text="QQ扫码（强烈推荐，成功率99%）"/>
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/rb_9"
+            style="@style/check_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:drawableLeft="@drawable/cz_05"
+            android:text="QQ扫码"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:gravity="center"
+        android:padding="15dp"
+        android:background="#fff">
+
+        <Button
+            android:id="@+id/btnRecharge"
+            style="@style/btn_blue"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:text="去支付" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="线上充值"
+        android:textColor="@color/text_black"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/tvOfflineBank"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1px"
+        android:background="#fff"
+        android:drawableLeft="@drawable/cz_07"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textSize="12sp"
+        android:text="银行转账(最低50起冲)"
+        android:textColor="@color/text_black"
+         />
+
+    <TextView
+        android:id="@+id/tvOfflineAli"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#fff"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/cz_03"
+        android:drawablePadding="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/text_black"
+        android:text="支付宝转账招商" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRechargeLog"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:textSize="13sp"
+            android:textColor="@color/text_white"
+            android:text="查看转账记录"
+            android:background="@drawable/btn_blue_border"/>
+
+        <Button
+            android:id="@+id/btnCusSvr"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:textSize="13sp"
+            android:textColor="@color/text_white"
+            android:text="联系在线客服"
+            android:background="@drawable/btn_blue_border"/>
+    </LinearLayout>
+</LinearLayout>
